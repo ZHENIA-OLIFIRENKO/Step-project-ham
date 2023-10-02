@@ -1,0 +1,234 @@
+header {
+    position: relative;
+    background-image: url(../images/Layer15.png);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background-color: rgba(94, 93, 88, 0.6);
+}
+
+.nav-head {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    position: relative;
+}
+
+.hexagon-img {
+    margin-right: 10px;
+}
+
+.letter-h {
+    font-family: Roboto;
+    font-size: 44px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 17%; 
+    left: 6%; 
+}
+
+.the {
+    font-weight: 300;
+    font-family: Roboto;
+    font-size: 44px;
+    color: white;
+}
+
+.ham {
+    font-weight: 600;
+    font-family: Roboto;
+    font-size: 44px;
+    color: #18CFAB;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 305px;
+}
+
+.nav-menu li a {
+    color: rgba(255, 255, 255, 0.60);
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav-list {
+    transition: color 0.3s ease;
+}
+
+.nav-list:hover {
+    position: relative;
+    color: #18CFAB;
+}
+
+.nav-list:hover::after {
+    content: "";
+    background: #18CFAB;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -49.8px;
+    left: 0;
+}
+
+.menu {
+    position: relative;
+}
+
+.search-img {
+    position: absolute;
+    left: 100%;
+    top: -6%;
+    width: 21px;
+    height: 20px;
+}
+
+/* =============================== */
+
+.text-in-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+}
+
+.the-ham {
+    color: white;
+    font-family: Roboto;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.wordpress {
+    color: #18CFAB;
+    font-family: Roboto;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.h1-header {
+    color: white;
+    font-family: Roboto;
+    font-size: 78px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.just-buy {
+    color: #D4D4D4;
+    font-family: Roboto;
+    font-size: 34px;
+    font-weight: 300;
+}
+
+/* =============================== */
+
+.header-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: -110px;
+}
+
+.explore-now {
+    width: 169px;
+    height: 63px;
+    border-radius: 4px;
+    background: #18CFAB;
+    border: none;
+    color: white;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0px -5px 0px 0px rgba(255,255,255,1);
+    transition: background-color 0.4s ease;
+}
+
+.explore-now:hover {
+    background-color: #00CBF6;
+}
+
+.purchase-now {
+    width: 169px;
+    height: 63px;
+    border-radius: 4px;
+    background: #18CFAB;
+    border: none;
+    color: white;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 26px;
+    box-shadow: 0px -5px 0px 0px rgba(255,255,255,1);
+    transition: background-color 0.4s ease;
+}
+
+.purchase-now:hover {
+    background-color: #00CBF6;
+}
+
+/* =============================== */
+
+.grid-squares {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 377px;
+    border-top: 8px solid white;
+    cursor: pointer;
+    margin-top: 23.5%;
+}
+
+.text-in-square {
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 48px;
+}
+
+.black-square {
+    background-color: #1C2A33;
+    color: #18CFAB;
+}
+
+.green-square {
+    background-color: #2ECAA9;
+    color: white;
+}
