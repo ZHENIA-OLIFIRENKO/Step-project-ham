@@ -166,6 +166,7 @@ nav {
     border: none;
     color: white;
     font-family: Roboto;
+    cursor: pointer;
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
@@ -185,6 +186,7 @@ nav {
     border: none;
     color: white;
     font-family: Roboto;
+    cursor: pointer;
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
@@ -198,6 +200,11 @@ nav {
 }
 
 /* =============================== */
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 .grid-squares {
     display: grid;
@@ -212,7 +219,6 @@ nav {
     height: 377px;
     border-top: 8px solid white;
     cursor: pointer;
-    margin-top: 23.5%;
 }
 
 .text-in-square {
@@ -220,7 +226,7 @@ nav {
     font-family: Roboto;
     font-weight: 700;
     font-size: 20px;
-    margin-top: 48px;
+    margin-top: 59px;
 }
 
 .black-square {
@@ -231,4 +237,188 @@ nav {
 .green-square {
     background-color: #2ECAA9;
     color: white;
+}
+
+/* ======================= */
+
+.h2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 90px 0 130px 0;
+}
+
+.our-service-title {
+    color: #4E4E4E;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.title-lines {
+    margin: 0 auto;
+    height: 5px;
+    width: 75px;
+    border-top: 1px solid #18CFAB;
+    border-bottom: 1px solid #18CFAB;
+    transform: skewX(75deg);
+}
+
+.tabs-service a {
+    list-style: none;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.our-services {
+    height: 238px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -59px;
+}
+
+.tabs-service {
+    background-color: white;
+    display: flex;
+}
+
+.tabs-title {
+    display: flex;
+    justify-content: center;
+    width: 175px;
+    height: 50px;
+    font-family: Roboto;
+    padding: 30px 20px 0;
+    background-color: #F8FCFE;
+    color: #4E4E4E;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.tabs-title.active {
+    background-color:#18CFAB ;
+    color: white;
+    position: relative;
+}
+
+.tabs-title.active::after {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #18CFAB;
+}
+
+.tabs-content {
+    display: flex;
+    gap: 20px;
+    width: 1244px;
+    margin-top: 23px;
+}
+
+.tab-img {
+    height: 139px;
+}
+
+.p-block {
+    width: 952px;
+    flex: 1;
+    height: 136px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+    position: absolute;
+    left: 115%;
+    top: 6%;
+    line-height: 1.8;
+}
+
+.tab-block {
+    display: flex;
+    flex-direction: row;
+    display: none; 
+    position: relative;
+}
+
+.tab-block.active:target {
+    display: block;
+}
+
+/* ===================== */
+
+.parallax2 {
+    position: relative;
+    background-image: url(../images/Layer15.png);
+    height: 476px;
+    margin: 91px 0 91px 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.everything-is-ready {
+    position: relative;
+}
+
+.content-parallax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.everything {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 126px;
+    color: #18CFAB;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.smooth {
+    color: #D8D8D8;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 13px 0 67px 0;
+}
+
+.purchase-now2 {
+    width: 169px;
+    height: 63px;
+    border-radius: 4px;
+    background: #18CFAB;
+    border: none;
+    color: white;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 26px;
+    box-shadow: 0px -5px 0px 0px rgba(255,255,255,1);
+    transition: background-color 0.4s ease;
+}
+
+.purchase-now2:hover {
+    background-color: #00CBF6;
 }
