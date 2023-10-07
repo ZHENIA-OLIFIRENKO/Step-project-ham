@@ -361,9 +361,9 @@ main {
 
 .parallax2 {
     position: relative;
-    background-image: url(../images/Layer15.png);
+    background-image: url(../images/Layer\ 21\ 1.jpg);
     height: 476px;
-    margin: 91px 0 91px 0;
+    margin: 91px 0 0;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -371,6 +371,7 @@ main {
 }
 
 .everything-is-ready {
+    background: rgba(94, 93, 88, 0.6);
     position: relative;
 }
 
@@ -421,4 +422,80 @@ main {
 
 .purchase-now2:hover {
     background-color: #00CBF6;
+}
+
+/* ========================== */
+
+.container-tabs {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title-amazing-work {
+    color: #4E4E4E;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 95px 0 20px 0;
+}
+
+.amazing-work-lines {
+    margin: 0 auto;
+    height: 5px;
+    width: 75px;
+    border-top: 1px solid #18CFAB;
+    border-bottom: 1px solid #18CFAB;
+    transform: skewX(75deg);
+    margin-bottom: 69px;
+}
+
+.tabs-title-img {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 71px;
+}
+
+.tabs-img {
+    display: flex;
+    justify-content: center;
+    padding: 21px 13px;
+    cursor: pointer;
+    font-size: 14px;
+    min-width: 50px;
+    font-family: Roboto;
+    background-color: #F8FCFE;
+    border: 1px solid #EDEFEF;
+    color: #717171;
+}
+
+.tabs-img:hover {
+    color: #aaaaaa;
+}
+
+.tabs-img.active {
+    border: 3px solid #18CFAB;
+    color: #18CFAB;
+}
+
+.tabs-content-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 1200px;
+    margin-left: 25%;
+    margin: 0 auto;
+}
+
+.img-item {
+    width: 285px;
+    margin: 0 ;
+    position: relative;
+}
+
+
+.img-item img {
+    width: 100%;
 }
