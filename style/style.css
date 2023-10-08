@@ -267,10 +267,9 @@ main {
     transform: skewX(75deg);
 }
 
-.tabs-service a {
+.tabs-service li {
     list-style: none;
     padding-left: 20px;
-    text-decoration: none;
 }
 
 .our-services {
@@ -353,7 +352,7 @@ main {
     position: relative;
 }
 
-.tab-block.active:target {
+.tab-block.active {
     display: block;
 }
 
@@ -450,7 +449,7 @@ main {
     margin-bottom: 69px;
 }
 
-.tabs-title-img {
+.title-tabs-img {
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -479,7 +478,7 @@ main {
     color: #18CFAB;
 }
 
-.tabs-content-img {
+.content-tabs-img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

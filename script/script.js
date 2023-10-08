@@ -1,18 +1,23 @@
-let tabTitle = document.querySelectorAll(".tabs-title");
+document.addEventListener("DOMContentLoaded", function() {
+    let tabTitles = document.querySelectorAll(".tabs-title");
+    let tabBlocks = document.querySelectorAll(".tab-block");
 
-let tabBlock = function () {
-    tabTitle.forEach(elem => {
-        elem.addEventListener("click", selectTabTitle);
-    });
+    tabTitles.forEach((elem, index) => {
+        elem.addEventListener("click", function() {
+            tabTitles.forEach(title => {
+                title.classList.remove("active");
+            });
 
-    function selectTabTitle() {
-        tabTitle.forEach(elem => {
-        elem.classList.remove("active");
+            elem.classList.add("active");
+
+            tabBlocks.forEach(block => {
+                block.classList.remove("active");
+            });
+
+            tabBlocks[index].classList.add("active");
+        });
     });
-    this.classList.add("active");
-    }
-};
-tabBlock();
+});
 
 // ========================================
 
