@@ -23,24 +23,46 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function () {
     function filterImages(category) {
-        const imgItems = document.querySelectorAll('.img-item');
+        const imgItems = document.querySelectorAll(".img-item");
         imgItems.forEach(item => {
-            const dataBlockImg = item.getAttribute('data-block-img');
-                if (dataBlockImg === category || category === 'all') {
-                    item.style.display = 'block';
+            const dataBlockImg = item.getAttribute("data-block-img");
+                if (dataBlockImg === category || category === "all") {
+                    item.style.display = "block";
                 } else {
-                    item.style.display = 'none';
+                    item.style.display = "none";
                 }
         });
     }
 
-    const tabs = document.querySelectorAll('.tabs-img');
+    const tabs = document.querySelectorAll(".tabs-img");
     tabs.forEach(tab => {
-        tab.addEventListener('click', function () {
-            const category = this.getAttribute('data-block-img');
-            tabs.forEach(t => t.classList.remove('active'));
-            this.classList.add('active');
+        tab.addEventListener("click", function () {
+            const category = this.getAttribute("data-block-img");
+            tabs.forEach(t => t.classList.remove("active"));
+            this.classList.add("active");
             filterImages(category);
         });
     });
 });
+
+// ===================================
+
+function startBlinking() {
+    var button = document.querySelector('.load-more');
+    var blinkCount = 0;
+
+    function blink() {
+        if (blinkCount < 8) {
+            button.style.backgroundColor = (blinkCount % 2 === 0) ? '#e74c3c' : '#18CFAB';
+            
+            blinkCount++;
+
+            setTimeout(blink, 500);
+        } else {
+            button.style.transition = 'opacity 1s ease';
+            button.style.opacity = '0';
+        }
+    }
+
+    blink();
+}
