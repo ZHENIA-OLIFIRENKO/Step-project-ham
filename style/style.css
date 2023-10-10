@@ -289,7 +289,7 @@ main {
 .tabs-title {
     display: flex;
     justify-content: center;
-    width: 175px;
+    width: 180px;
     height: 50px;
     font-family: Montserrat;
     padding: 30px 20px 0;
@@ -616,8 +616,102 @@ main {
     text-transform: uppercase;
     margin-left: 26px;
     transition: background-color 0.4s ease;
+    margin-bottom: 107px;
 }
 
 .load-more:hover {
     background-color: #00CBF6;
+}
+
+/* ========================================= */
+
+.breaking-news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-breaking-news {
+    color: #4E4E4E;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 95px 0 20px 0;
+}
+
+.breaking-news-lines {
+    margin: 0 auto;
+    height: 5px;
+    width: 75px;
+    border-top: 1px solid #18CFAB;
+    border-bottom: 1px solid #18CFAB;
+    transform: skewX(75deg);
+    margin-bottom: 69px;
+}
+
+.grid-breaking-news {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 35px;
+    grid-row-gap: 117px;
+    margin-bottom: 150px;
+}
+
+.all-breaking-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.hover-breaking-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 70px;
+    height: 68px;
+    background-color: #203E38;
+    top: 0;
+    right: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.text-under {
+    color: #717171;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+    position: absolute;
+    left: 20px;
+    bottom: -45px;
+}
+
+.second-text-under {
+    color: #777;
+    font-family: Montserrat;
+    font-size: 13.991px;
+    font-style: normal;
+    font-weight: 300;
+    position: absolute;
+    left: 15px;
+    bottom: -65px;
+}
+
+.all-breaking-news:hover .hover-breaking-news {
+    background-color: #18CFAB;
+}
+
+.all-breaking-news:hover .text-under {
+    color: #18CFAB;
 }
