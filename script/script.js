@@ -1,3 +1,5 @@
+// ================Our Services================
+
 let tabTitles = document.querySelectorAll(".tabs-title");
 let tabBlocks = document.querySelectorAll(".tab-block");
 
@@ -16,7 +18,7 @@ tabTitles.forEach((elem, index) => {
     });
 });
 
-// ========================================
+// =====================Our Amazing Work===================
 
 function filterImages(category) {
     const imgItems = document.querySelectorAll(".img-item");
@@ -40,7 +42,7 @@ tabs.forEach(tab => {
     });
 });
 
-// ===================================
+// ================ANIMATION LOAD MORE===================
 
 function startBlinking() {
     let button = document.querySelector('.load-more');
@@ -62,7 +64,7 @@ function startBlinking() {
     blink();
 }
 
-// =====================================
+// =================SLIDER====================
 
 const navigation = document.querySelectorAll('.user-photo-small');
 const slides = document.querySelectorAll('.slider-user');
