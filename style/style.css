@@ -16,7 +16,7 @@ header {
     z-index: 1;
 }
 
-nav {
+.nav-block {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -266,10 +266,16 @@ main {
     font-size: 36px;
     font-weight: 400;
     margin-bottom: 24px;
+    position: relative;
 }
 
-.title-lines {
-    margin: 0 auto;
+/* fixed */
+
+.our-service-title::after {
+    content: "";
+    position: absolute;
+    top: 200%;
+    left: 35%;
     height: 5px;
     width: 75px;
     border-top: 1px solid #18CFAB;
@@ -452,17 +458,22 @@ main {
     font-family: Montserrat;
     font-size: 36px;
     font-weight: 400;
-    margin: 95px 0 20px 0;
+    margin: 95px 0 80px 0;
+    position: relative;
 }
 
-.amazing-work-lines {
-    margin: 0 auto;
+/* fixed */
+
+.title-amazing-work::after {
+    content: "";
+    position: absolute;
+    top: 200%;
+    left: 47%;
     height: 5px;
     width: 75px;
     border-top: 1px solid #18CFAB;
     border-bottom: 1px solid #18CFAB;
     transform: skewX(75deg);
-    margin-bottom: 69px;
 }
 
 /* TABS TITLE-IMG */
@@ -655,17 +666,22 @@ main {
     font-family: Montserrat;
     font-size: 36px;
     font-weight: 400;
-    margin: 95px 0 20px 0;
+    margin: 95px 0 80px 0;
+    position: relative;
 }
 
-.breaking-news-lines {
-    margin: 0 auto;
+/* fixed */
+
+.title-breaking-news::after {
+    content: "";
+    position: absolute;
+    top: 200%;
+    left: 40%;
     height: 5px;
     width: 75px;
     border-top: 1px solid #18CFAB;
     border-bottom: 1px solid #18CFAB;
     transform: skewX(75deg);
-    margin-bottom: 69px;
 }
 
 /* GRID BREAKING NEWS */
@@ -753,17 +769,22 @@ main {
     font-family: Montserrat;
     font-size: 36px;
     font-weight: 400;
-    margin: 98px 0 25px 0;
+    margin: 98px 0 85px 0;
+    position: relative;
 }
 
-.lines-what-say-block {
-    margin: 0 auto;
+/* fixed */
+
+.h2-what-say-block::after {
+    content: "";
+    position: absolute;
+    top: 200%;
+    left: 45%;
     height: 5px;
     width: 75px;
     border-top: 1px solid #18CFAB;
     border-bottom: 1px solid #18CFAB;
     transform: skewX(75deg);
-    margin-bottom: 69px;
 }
 
 .quotes {

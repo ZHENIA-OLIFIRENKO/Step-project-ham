@@ -3,7 +3,7 @@
 let tabTitles = document.querySelectorAll(".tabs-title");
 let tabBlocks = document.querySelectorAll(".tab-block");
 
-tabTitles.forEach((elem, index) => {
+tabTitles.forEach((elem) => {
     elem.addEventListener("click", function() {
         tabTitles.forEach(title => {
             title.classList.remove("active");
@@ -13,8 +13,13 @@ tabTitles.forEach((elem, index) => {
         tabBlocks.forEach(block => {
             block.classList.remove("active");
         });
+// fixed
+        let dataBlock = elem.getAttribute("data-block");
 
-        tabBlocks[index].classList.add("active");
+        let changingBlock = document.querySelector(`.tab-block[data-block="${dataBlock}"]`);
+        if (changingBlock) {
+            changingBlock.classList.add("active");
+        }
     });
 });
 
