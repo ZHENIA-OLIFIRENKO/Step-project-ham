@@ -623,6 +623,18 @@ main {
     font-weight: 300;
 }
 
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+} */
+
 /* BUTTON IN OUR AMAZING WORK */
 .btn-load-more {
     display: flex;
@@ -650,6 +662,7 @@ main {
 .load-more:hover {
     background-color: #00CBF6;
 }
+
 
 /* BREAKING NEWS BLOCK  */
 
